@@ -3,7 +3,7 @@ name: SurveyBear CI/CD
 on: 
   pull_request:
     branches:
-      - main
+      -main
 
 jobs:
   test_job:
