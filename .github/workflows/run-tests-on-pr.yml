@@ -3,7 +3,7 @@ name: SurveyBear CI/CD
 on: 
   pull_request:
     branches:
-      - test-lis
+      - main
 
 jobs:
   test_job:
@@ -18,4 +18,5 @@ jobs:
           node-version: 15.x
       - run: npm install
       - run: npx nx test surveybear-api
+      - run: npx nx test surveybear-survey-spa
    
