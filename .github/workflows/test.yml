@@ -1,15 +1,16 @@
-name: SurveyBear CI/CD
+name: Test
 
-on: 
+on:
   pull_request:
-    branches: [ test-lis ]
+    types: [opened, reopened]
+    branches:
+      - test-lis
 
-      
 jobs:
   test_job:
     runs-on: ubuntu-latest
     name: Test Job
-    
+
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 15.x
