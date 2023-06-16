@@ -8,7 +8,7 @@ on:
 
 jobs:
   test_job:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     name: Test Job
 
     steps:
