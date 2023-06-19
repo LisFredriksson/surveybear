@@ -3,8 +3,7 @@ name: Test2
 on:
   pull_request:
     types: [opened, reopened]
-    branches:
-      - test-lis
+    
 
 jobs:
   test_job:
