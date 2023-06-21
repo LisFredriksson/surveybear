@@ -1,15 +1,15 @@
 name: Test
 
-on: 
+on:
   pull_request:
     branches: [ test-lis ]
 
-      
+
 jobs:
   test_job:
     runs-on: ubuntu-latest
     name: Test Job
-    
+
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js 15.x
@@ -19,3 +19,4 @@ jobs:
       - run: npm install
       - run: npx nx test surveybear-api
       - run: npx nx test surveybear-survey-spa
+change my yml file so it runs test on both pull request and push 

@@ -1,9 +1,10 @@
-name: Test2
+name: Test
 
 on:
+  push:
+    branches: [ test-lis ]
   pull_request:
-    types: [opened, reopened]
-    
+    branches: [ test-lis ]
 
 jobs:
   test_job:
